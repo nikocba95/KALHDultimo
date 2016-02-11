@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="675.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.alumnosVerCalificacionesController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Mis Calificaciones" textFill="#00a1ff">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="lblNombreAlumno" layoutX="34.0" layoutY="10.0" text="nombreAlumno(enMAYUSCULAS)" textFill="#00a1ff">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Region layoutX="110.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </right>
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox prefHeight="528.0" prefWidth="429.0">
+               <children>
+                  <Label text="Historial:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tablaHistorial">
+                    <columns>
+                      <TableColumn fx:id="columnaMateriaH" prefWidth="104.0" text="Materia" />
+                      <TableColumn fx:id="columnaNotaH" prefWidth="46.0" text="Nota" />
+                        <TableColumn fx:id="columnaFechaH" prefWidth="86.0" text="Fecha" />
+                        <TableColumn fx:id="columnaTipoExamenH" prefWidth="99.0" text="Tipo Examen" />
+                    </columns>
+                  </TableView>
+                  <Region VBox.vgrow="ALWAYS" />
+                  <Label layoutX="10.0" layoutY="10.0" text="!Prestar atencion!">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tablaAtencion" layoutX="10.0" layoutY="37.0" prefHeight="185.0" prefWidth="262.0">
+                     <columns>
+                        <TableColumn fx:id="columnaMateriaA" prefWidth="271.0" text="Materia" />
+                        <TableColumn fx:id="columnaPromedioA" minWidth="0.0" prefWidth="64.0" text="Promedio" />
+                     </columns>
+                  </TableView>
+                  <Region VBox.vgrow="ALWAYS" />
+               </children>
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" />
+               </HBox.margin>
+            </VBox>
+            <Region layoutX="449.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+            <VBox layoutX="54.0" layoutY="10.0" prefHeight="543.0" prefWidth="517.0">
+               <children>
+                  <Label text="Filtrar por materia:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboMateria" onAction="#actionComboMateria" prefWidth="150.0" promptText="Seleccione materia" />
+                  <Region VBox.vgrow="ALWAYS" />
+                  <HBox prefHeight="239.0" prefWidth="477.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <TableView fx:id="tablaMaterias" prefHeight="239.0" prefWidth="331.0">
+                           <columns>
+                              <TableColumn fx:id="columnaMateriaM" prefWidth="104.0" text="Materia" />
+                              <TableColumn fx:id="columnaNotaM" prefWidth="46.0" text="Nota" />
+                              <TableColumn fx:id="columnaFechaM" prefWidth="86.0" text="Fecha" />
+                              <TableColumn fx:id="columnaTipoExamenM" prefWidth="94.0" text="Tipo Examen" />
+                           </columns>
+                        </TableView>
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Region VBox.vgrow="ALWAYS" />
+                  <HBox layoutX="10.0" layoutY="62.0" prefHeight="247.0" prefWidth="477.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <BarChart prefHeight="203.0" prefWidth="477.0" title="Promedios generales:" HBox.hgrow="ALWAYS">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Region VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="buttonVolver" mnemonicParsing="false" text="Volver">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

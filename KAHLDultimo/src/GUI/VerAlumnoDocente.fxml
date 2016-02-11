@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="718.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </right>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+              <tabs>
+                <Tab text="Datos Institucionales">
+                     <content>
+                        <VBox>
+                           <children>
+                              <HBox prefHeight="266.0" prefWidth="733.0">
+                                 <children>
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <HBox spacing="10.0">
+                                       <children>
+                                          <VBox prefHeight="298.0" prefWidth="504.0">
+                                             <children>
+                                                <HBox>
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" text="DNI:" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Region HBox.hgrow="ALWAYS" />
+                                                      <Label text="9999999">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Region layoutX="45.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                                      <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="Sexo:" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Region layoutX="220.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                                      <Label layoutX="165.0" layoutY="10.0" text="Masculino">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Region VBox.vgrow="ALWAYS" />
+                                                <HBox layoutX="10.0" layoutY="10.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" text="Nombre/s:" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Region HBox.hgrow="ALWAYS" />
+                                                      <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="Juan" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Region layoutX="95.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                                   </children>
+                                                </HBox>
+                                                <Region layoutX="10.0" layoutY="40.0" VBox.vgrow="ALWAYS" />
+                                                <HBox layoutX="10.0" layoutY="130.0" prefHeight="0.0" prefWidth="504.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" text="Apellido/s:" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Region HBox.hgrow="ALWAYS" />
+                                                      <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="Perez" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Region layoutX="95.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                                   </children>
+                                                </HBox>
+                                                <Region layoutX="10.0" layoutY="160.0" VBox.vgrow="ALWAYS" />
+                                                <HBox layoutX="10.0" layoutY="110.0" spacing="30.0">
+                                                   <children>
+                                                      <Label contentDisplay="CENTER" text="Fecha de Nacimiento:" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Region HBox.hgrow="ALWAYS" />
+                                                      <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="dd/mm/aaaa" textAlignment="CENTER">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Region layoutX="212.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                                   </children>
+                                                </HBox>
+                                                <Region layoutX="10.0" layoutY="125.0" VBox.vgrow="ALWAYS" />
+                                                <HBox layoutX="10.0" layoutY="124.0" prefHeight="35.0" prefWidth="504.0" spacing="80.0">
+                                                   <children>
+                                                      <VBox layoutX="180.0" layoutY="10.0" prefHeight="126.0" prefWidth="172.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="141.0" text="Nacionalidad:" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="141.0" text="Argentino" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox layoutX="138.0" layoutY="10.0" prefHeight="126.0" prefWidth="174.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" text="Pais: " textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="Argentina" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                                <Region layoutX="10.0" layoutY="245.0" VBox.vgrow="ALWAYS" />
+                                                <HBox layoutX="10.0" layoutY="167.0" spacing="80.0">
+                                                   <children>
+                                                      <VBox layoutX="180.0" layoutY="10.0" prefHeight="57.0" prefWidth="427.0">
+                                                         <children>
+                                                            <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="173.0" text="Correo electronico:" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" text="correoelectronico@gmail.com.ar" textAlignment="CENTER">
+                                                               <font>
+                                                                  <Font size="18.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                                <Region layoutX="10.0" layoutY="245.0" VBox.vgrow="ALWAYS" />
+                                             </children>
+                                          </VBox>
+                                          <Region HBox.hgrow="ALWAYS" />
+                                          <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                          <Region layoutX="524.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                          <VBox spacing="10.0">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="200.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../personIcon.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Label text="Imagen del alumno">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <HBox>
+                                                   <children>
+                                                      <Region HBox.hgrow="ALWAYS" />
+                                                      <Region HBox.hgrow="ALWAYS" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                          </children>
+                                    </HBox>
+                                    <Region layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <Region VBox.vgrow="ALWAYS" />
+                              <Separator prefWidth="200.0" />
+                              <Region layoutX="20.0" layoutY="239.0" VBox.vgrow="ALWAYS" />
+                              <HBox>
+                                 <children>
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <HBox>
+                                       <children>
+                                          <Region layoutX="117.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                          <VBox spacing="7.0">
+                                             <children>
+                                                <Label text="Matricula:">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="99999999999">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="Curso:">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label text="3 b">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <Region HBox.hgrow="ALWAYS" />
+                                          <BarChart title="Promedios Generales">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </BarChart>
+                                          <Region layoutX="117.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                    </HBox>
+                                    <Region layoutX="743.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </left>
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Datos del alumno" textAlignment="CENTER" textFill="#00a6ff">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="275.0" layoutY="10.0" mnemonicParsing="false" text="Volver" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

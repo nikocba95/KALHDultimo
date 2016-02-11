@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.cargarCursoController">
+   <right>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </right>
+   <left>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox>
+               <children>
+                  <HBox spacing="30.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button fx:id="buttonGuardar" mnemonicParsing="false" onAction="#actionGuardar" text="Guardar">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonCancelar" mnemonicParsing="false" text="Cancelar">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Region VBox.vgrow="ALWAYS" />
+                  <HBox>
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Label text="Si el curso no posee especialidad dejar en blanco el campo &quot;Especialidad&quot;" textFill="#00aaff">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Region layoutX="10.0" layoutY="40.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <HBox prefHeight="380.0" prefWidth="619.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox prefHeight="380.0" prefWidth="9.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Region VBox.vgrow="ALWAYS" />
+                  <HBox prefHeight="27.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Curso:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <TextField fx:id="textCurso" maxWidth="100.0" />
+                     </children>
+                  </HBox>
+                  <Region layoutX="10.0" layoutY="10.0" VBox.vgrow="ALWAYS" />
+                  <HBox layoutX="10.0" layoutY="186.0" prefHeight="27.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Division:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <TextField fx:id="textDivision" maxWidth="100.0" />
+                     </children>
+                  </HBox>
+                  <Region layoutX="10.0" layoutY="200.0" VBox.vgrow="ALWAYS" />
+                  <HBox layoutX="10.0" layoutY="255.0" prefHeight="27.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Especialidad:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <TextField fx:id="textEspecialidad" maxWidth="100.0" />
+                     </children>
+                  </HBox>
+                  <Region layoutX="10.0" layoutY="282.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <Label text="Ingrese la informacion del nuevo Curso" textAlignment="CENTER" textFill="#00ccff" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>

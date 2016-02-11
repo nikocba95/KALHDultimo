@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.alumnoVerSancionesController">
+   <top>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Sanciones Disciplinarias" textFill="#00a1ff">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="lblNombreAlumno" layoutX="34.0" layoutY="10.0" text="nombreAlumno(enMAYUSCULAS)" textFill="#00a1ff">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Region layoutX="110.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </right>
+   <center>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox prefHeight="468.0" prefWidth="677.0">
+               <children>
+                  <Label text="Historial de sanciones:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tablaSanciones" prefHeight="400.0" prefWidth="505.0">
+                    <columns>
+                      <TableColumn fx:id="fecha" prefWidth="96.0" text="Fecha" />
+                        <TableColumn fx:id="tipo" prefWidth="114.0" text="Tipo de Sancion" />
+                        <TableColumn fx:id="cantidad" prefWidth="136.0" text="Amonestaciones (Cant)" />
+                        <TableColumn fx:id="observacion" prefWidth="330.0" text="Observaciones" />
+                    </columns>
+                  </TableView>
+                  <Region VBox.vgrow="ALWAYS" />
+                  <HBox prefHeight="29.0" prefWidth="677.0">
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lblFelicitaciones" alignment="CENTER" contentDisplay="CENTER" text="FELICITACIONES POR SU CONDUCTA IMPECABLE!" textAlignment="CENTER" textFill="#00aaff">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" />
+               </HBox.margin>
+            </VBox>
+            <Region layoutX="449.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="buttonVolver" mnemonicParsing="false" onAction="#actionVolver" text="Volver">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </right>
+   <left>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </left>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <HBox spacing="30.0">
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" text="Cancelar">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <HBox prefHeight="380.0" prefWidth="619.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox HBox.hgrow="ALWAYS">
+               <children>
+                  <Region VBox.vgrow="ALWAYS" />
+                  <VBox>
+                     <children>
+                        <Label text="Curso">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <ComboBox prefWidth="185.0" promptText="Seleccione curso" />
+                     </children>
+                  </VBox>
+                  <Region layoutX="10.0" layoutY="10.0" VBox.vgrow="ALWAYS" />
+                  <VBox layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <Label text="Division">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox prefWidth="185.0" promptText="Seleccione division" />
+                     </children>
+                  </VBox>
+                  <Region VBox.vgrow="ALWAYS" />
+                  <Label text="Seleccione un alumno del curso">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TableView>
+                    <columns>
+                      <TableColumn editable="false" prefWidth="150.0" text="Apellido" />
+                      <TableColumn prefWidth="150.0" text="Nombre" />
+                        <TableColumn minWidth="0.0" prefWidth="30.0" text="DNI" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Region layoutX="10.0" layoutY="200.0" VBox.vgrow="ALWAYS" />
+                  <Region layoutX="10.0" layoutY="62.0" />
+               </children>
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox layoutX="215.0" layoutY="10.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Region VBox.vgrow="ALWAYS" />
+                  <VBox>
+                     <children>
+                        <Label text="Materia">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox prefWidth="185.0" promptText="Seleccione materia" />
+                     </children>
+                  </VBox>
+                  <Region layoutX="10.0" layoutY="10.0" VBox.vgrow="ALWAYS" />
+                  <VBox layoutX="10.0" layoutY="93.0">
+                     <children>
+                        <Label text="Tipo de examen">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox prefHeight="25.0" prefWidth="185.0" promptText="Seleccione tipo de examen" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+                  <Region layoutX="10.0" layoutY="200.0" VBox.vgrow="ALWAYS" />
+                  <VBox layoutX="10.0" layoutY="202.0">
+                     <children>
+                        <Label text="Alumno:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" text="nombreAlumno(en MAYUSCULAS)" textFill="#10bdc6">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Region layoutX="10.0" layoutY="282.0" VBox.vgrow="ALWAYS" />
+                  <HBox>
+                     <children>
+                        <VBox>
+                           <children>
+                              <Label text="Nota:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="25.0" prefWidth="0.0" />
+                           </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <VBox layoutX="10.0" layoutY="10.0">
+                           <children>
+                              <Label text="Fecha:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker promptText="Elija usando calendario" />
+                           </children>
+                        </VBox>
+                        <Region layoutX="60.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                        <VBox layoutX="132.0" layoutY="10.0">
+                           <children>
+                              <Label text="Mesa:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField prefHeight="25.0" prefWidth="19.0" />
+                           </children>
+                        </VBox>
+                        <Region layoutX="246.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Region layoutX="10.0" layoutY="336.0" VBox.vgrow="ALWAYS" />
+                  <VBox layoutX="10.0" layoutY="219.0">
+                     <children>
+                        <Label text="Observaciones:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea prefHeight="200.0" prefWidth="200.0" promptText="Escriba cualquier informacion adicional que desee..." wrapText="true" />
+                     </children>
+                  </VBox>
+                  <Region layoutX="10.0" layoutY="316.0" VBox.vgrow="ALWAYS" />
+                  <HBox>
+                     <children>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="187.0" text="Cargar">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Region HBox.hgrow="ALWAYS" />
+                     </children>
+                  </HBox>
+                  <Region layoutX="10.0" layoutY="393.0" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <Region layoutX="446.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+   </center>
+   <top>
+      <Label text="Ingrese la informacion de Calificacion" textAlignment="CENTER" textFill="#00ccff" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>
